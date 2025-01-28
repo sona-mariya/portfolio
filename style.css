@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* General Style */
 body {
     margin: 0;
@@ -121,3 +122,128 @@ body {
 @keyframes blink {
     50% { border-color: transparent; }
 }
+=======
+/* General Style */
+body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(45deg, #0f0f0f, #1a1a1a, #121212);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Upper Section (Engagement) */
+.upper-space {
+    text-align: center;
+    margin-top: 10vh;
+    color: #0f0;
+    font-size: 2rem;
+}
+
+/* Glass Morphism Effect */
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Hacker Style Text */
+.hacker-text {
+    color: #0f0;
+    text-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
+}
+
+/* Terminal Header */
+.terminal-header {
+    font-size: 1.5rem;
+    color: #0f0;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Skill Bars */
+.skill-bar {
+    margin: 20px 0;
+}
+
+.progress-bar {
+    background-color: #2c3e50;
+    border-radius: 10px;
+    width: 100%;
+    height: 8px;
+    margin-top: 5px;
+}
+
+.progress {
+    background-color: #0f0;
+    height: 100%;
+    border-radius: 10px;
+    transition: width 1s ease-in-out;
+}
+
+/* Floating Icons */
+.floating-icons img {
+    position: absolute;
+    width: 50px;
+    opacity: 0.8;
+    animation: float 3s infinite ease-in-out alternate;
+}
+
+/* 3D Buttons */
+.button-3d {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background: linear-gradient(45deg, #0f0, #008000);
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+.button-3d:hover {
+    transform: scale(1.1);
+}
+
+/* Background Animation */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Fade-in Animations */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+/* Typing Effect */
+.terminal-text {
+    font-size: 2rem;
+    font-family: 'Roboto Mono', monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.1em solid #0f0;
+    width: 0;
+    animation: typing 4s steps(40) 1s forwards, blink 0.75s step-end infinite;
+}
+
+/* Typing Cursor Animation */
+@keyframes typing {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+>>>>>>> 3ed44dc25c111d6874b04fb062a1e2dc47e88950
